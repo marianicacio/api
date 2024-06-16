@@ -10,6 +10,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./image/7941730.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  background-image: url(./image/b31c2395c69a5083adb4b77e17625e2d.jpg);
+  background-size: cover;
 }
 
 code {
