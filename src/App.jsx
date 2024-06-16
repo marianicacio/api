@@ -21,7 +21,8 @@ export default function App() {
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
-      gap: "15px"
+      gap: "15px", 
+      marginTop: "150px"
     }}>
       <div style={{
         display: "flex",
@@ -30,9 +31,19 @@ export default function App() {
         justifyContent: "center",
         gap: "15px"
       }}>
-        <h1>Pegue seu pokemon pelo nome</h1>
-        <input type="text" onChange={(e) => setPokemon(e.target.value)}/>
-        <button type="button" onClick={handlePokemon}>Pokemon eu escolho você!</button>
+        <h1 style={{
+          fontFamily: "cursive",
+          color: "#ffde00",
+          fontSize: "38px"
+        }}>Pegue seu pokemon pelo nome</h1>
+        <input style={{
+          backgroundColor: "#fbd743",
+          border: "#3b4cca solid 2px"
+        }} type="text" onChange={(e) => setPokemon(e.target.value)}/>
+        <button style={{
+          backgroundColor: "#5db9ff",
+          border: "	#363b81 solid 2px"
+        }} type="button" onClick={handlePokemon}>Pokemon eu escolho você!</button>
       </div>
 
       {
@@ -45,7 +56,11 @@ export default function App() {
           justifyContent: "center",
           gap: "15px"
         }}>
-          <p>{pokedex.name}</p>
+          <p style={{
+            fontFamily: "cursive",
+            fontSize: "25px",
+            color: "#e6001a"
+          }}>{pokedex.name}</p>
           <img src={pokedex.sprites.front_default} alt="" />
           <img src={pokedex.sprites.front_shiny} alt="" />
         </div>
